@@ -110,13 +110,14 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-          unityInstance.SetFullscreen(1);
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
-        }).catch((message) => {
-          alert(message);
+        }).then((unityInstance) => {
+            unityInstance.SetFullscreen(1);
+        }).catch ((message) => {
+          alert(message);;
         });
       };
       document.body.appendChild(script);
