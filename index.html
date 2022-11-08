@@ -10,14 +10,6 @@
       *{
         overflow:hidden;
       }
-      #unity-webgl-logo{
-        width: 0px;
-        height: 0px;
-      }
-      #unity-fullscreen-button{
-        width: 0px;
-        height: 0px;
-      }
     </style>
   </head>
   <body>
@@ -107,7 +99,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
+        canvas.style.height =  '600px';
       }
 
       loadingBar.style.display = "block";
