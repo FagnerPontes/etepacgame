@@ -38,7 +38,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  /*transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
   display: none
 }
 
@@ -51,7 +51,7 @@ body {
 #unity-progress-bar-empty {
   width: 141px;
   height: 18px;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   margin-left: 6.5px;
   background: url('progress-bar-empty-dark.png') no-repeat center
 }
@@ -59,7 +59,7 @@ body {
 #unity-progress-bar-full {
   width: 0%;
   height: 18px;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   background: url('progress-bar-full-dark.png') no-repeat center
 }
 
