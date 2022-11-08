@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ETEPAC_Game</div>
+        <div id="unity-build-title">ETEPAC Game</div>
       </div>
     </div>
     <script>
@@ -109,9 +109,9 @@
         }).then((unityInstance) => {
           unityInstance.SetFullscreen(1);
           loadingBar.style.display = "none";
-          //fullscreenButton.onclick = () => {
-            //unityInstance.SetFullscreen(1);
-          //};
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
         }).catch((message) => {
           alert(message);
         });
